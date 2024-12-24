@@ -34,6 +34,7 @@
 }
 @media screen and (max-width: 768px) {
   .Cards-Containers {
+      gap: 1rem;
       padding: 8px; 
       flex-direction: row;
       justify-content: center; /* Center cards on medium screens */
