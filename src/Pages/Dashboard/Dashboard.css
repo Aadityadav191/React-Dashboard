@@ -1,0 +1,182 @@
+.Dashboard-container {
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  .Dashboard-container {
+      padding: 10px; /* Reduced padding for tablets and smaller screens */
+  }
+}
+@media screen and (max-width: 480px) {
+  .Dashboard-container {
+      padding: 5px; /* Minimal padding for mobile devices */
+  }
+}
+
+
+
+.Cards-Containers {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+}
+@media screen and (max-width: 768px) {
+  .Cards-Containers {
+      padding: 8px; /* Adjust padding for smaller screens */
+      flex-direction: row;
+      justify-content: center; /* Center cards on medium screens */
+  }
+}
+@media screen and (max-width: 480px) {
+  .Cards-Containers {
+      padding: 5px; /* Minimal padding for mobile devices */
+      flex-direction: row; /* Stack cards vertically on very small screens */
+      gap: 10px; /* Add spacing between stacked cards */
+  }
+}
+
+
+
+
+.Dashboard-container h2 {
+  font-size: 25px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.Dashboard-container p {
+  font-size: 13px;
+  color: #6c757d;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .Dashboard-container h2 {
+      font-size: 22px; /* Slightly smaller font for medium screens */
+      margin-bottom: 8px; /* Reduced margin for better spacing */
+  }
+  .Dashboard-container p {
+      font-size: 12px; /* Adjust font size for readability on smaller screens */
+      margin-bottom: 8px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Dashboard-container h2 {
+      font-size: 20px; /* Smaller font for mobile devices */
+      margin-bottom: 6px;
+  }
+  .Dashboard-container p {
+      font-size: 11px; /* Smaller font for mobile readability */
+      margin-bottom: 6px;
+  }
+}
+
+
+
+
+
+.dashboard-charts {
+  /* margin-top: 5px; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  gap: 1rem; /* Adds spacing between items */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dashboard-charts {
+    flex-direction: column; /* Stacks charts vertically */
+    align-items: center; /* Centers charts horizontally */
+    gap: 1.5rem; /* Adds extra spacing for better visibility */
+    padding: 10px; /* Adds padding for smaller screens */
+  }
+}
+@media (max-width: 480px) {
+  .dashboard-charts {
+    padding: 5px; /* Minimal padding for very small screens */
+    gap: 2rem; /* Increased spacing for smaller charts */
+  }
+}
+
+
+
+
+
+
+.dashboard-charts main {
+  background-color: #f7f7f8;
+  border-radius: 20px;
+  padding: 5px;
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Push items to top and bottom */
+  align-items: center; /* Center children horizontally */
+  height: 100vh; /* Full height for demonstration */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 1.5rem; /* Adds spacing between items */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dashboard-charts main {
+    height: auto; /* Allows height to adjust dynamically based on content */
+    padding: 10px; /* Adds more padding for smaller screens */
+    gap: 1rem; /* Adjust spacing for smaller screens */
+    align-items: stretch; /* Ensure full-width alignment on medium screens */
+  }
+}
+@media (max-width: 480px) {
+  .dashboard-charts main {
+    padding: 8px; /* Slightly reduced padding for very small screens */
+    gap: 0.5rem; /* Compact spacing for mobile devices */
+    border-radius: 10px; /* Reduce border-radius for smaller screens */
+  }
+}
+
+
+
+/* Grouped Barchart and Piechart row css */
+.Scharts-container {
+  display: flex;
+  justify-content: space-around;
+  /* flex-wrap: wrap; Allows wrapping for smaller screens */
+  padding: 1px;
+  gap: 1rem; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .Scharts-container {
+    flex-direction: column; /* Stacks charts vertically */
+    align-items: center; /* Centers charts horizontally */
+    gap: 0rem; /* Adds more spacing for better readability on small screens */
+  }
+}
+
+
+
+
+
+
+.Scharts-container main {
+  background-color: #f7f7f8;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .Scharts-container main {
+    border-radius: 15px; /* Reduce border-radius for medium screens */
+    padding: 10px; /* Add more padding for smaller screens */
+    margin: 10px; /* Adjust margin for better spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .Scharts-container main {
+    border-radius: 10px; /* Further reduce border-radius for smaller screens */
+    padding: 8px; /* Slightly smaller padding for mobile devices */
+    margin: 5px; /* Minimal margin for compact spaces */
+  }
+}

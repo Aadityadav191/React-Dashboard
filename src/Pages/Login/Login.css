@@ -1,0 +1,71 @@
+
+
+
+.loginpage {
+    display: flex;
+    flex-direction: row; /* Default layout for larger screens */
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding: 1rem;
+}
+
+/* responsiveness for tablets and smaller screens */
+@media (max-width: 768px) {
+    .loginpage {
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: center;
+        margin-top: 2rem; /* Adjust margin for smaller screens */
+    }
+}
+
+/* responsiveness for mobile devices */
+@media (max-width: 480px) {
+    .loginpage {
+        margin-top: 1rem;
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+
+    input, button {
+        width: 90%; /* Ensure input and button take up most of the screen width */
+        margin: 0.5rem 0;
+    }
+}
+
+
+/* //shape Divider in login page  */
+.custom-shape-divider-bottom-1734869843 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-bottom-1734869843 svg {
+    position: relative;
+    display: block;
+    width: calc(142% + 1.3px);
+    height: 115px;
+}
+
+.custom-shape-divider-bottom-1734869843 .shape-fill {
+    fill: #a192d9;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-bottom-1734869843 svg {
+        width: calc(142% + 1.3px);
+        height: 100px;
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1734869843 svg {
+        width: calc(100% + 1.3px);
+        height: 0px;
+    }
+}

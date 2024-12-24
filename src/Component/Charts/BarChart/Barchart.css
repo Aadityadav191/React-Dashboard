@@ -1,0 +1,53 @@
+.barchart-btn {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 1rem; /* Adds spacing between buttons */
+  }
+  
+  /* Individual button styles */
+  .barchartbutton {
+    background-color: #ea80b7;
+    width: 15rem; /* Fixed width for larger screens */
+    max-height: 30px;
+    border-radius: 3px;
+    align-items: center;
+    color: aliceblue;
+    border: none;
+    text-align: center; /* Ensures text is centered */
+    cursor: pointer; /* Makes it clear the element is clickable */
+  }
+  
+  .barchartbutton:hover {
+    background-color: rgb(70, 167, 143);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .barchart-btn {
+      flex-direction: column; /* Stack buttons vertically */
+      align-items: center; /* Center buttons horizontally */
+      gap: 1.5rem; /* Add more spacing between stacked buttons */
+    }
+  
+    .barchartbutton {
+      width: 12rem; /* Reduce width for smaller screens */
+      max-height: 35px; /* Slightly increase height for better touch interaction */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .barchart-btn {
+      padding: 5px; /* Reduce padding for compact screens */
+      gap: 1rem; /* Adjust gap for better spacing */
+    }
+  
+    .barchartbutton {
+      width: 10rem; /* Smaller width for mobile devices */
+      max-height: 40px; /* Make buttons more touch-friendly */
+    }
+  }
+  
+
+
+

@@ -1,0 +1,16 @@
+
+
+.linechart-btn{
+    background-color:rgb(234,128,183);
+    width: 23rem;
+    max-height:  40px; 
+    border-radius: 3px;
+    color: aliceblue;
+    border: none;
+    padding:10px;
+    margin: 20px;
+}
+
+.linechart-btn:hover{
+    background-color: rgb(54, 158, 102);
+}

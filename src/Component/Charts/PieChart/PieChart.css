@@ -1,0 +1,14 @@
+.piechart-btn{
+    background-color:rgb(119, 103, 174);
+    width: 15rem;
+    max-height:  40px; 
+    border-radius: 3px;
+    color: aliceblue;
+    border: none;
+    padding:10px;
+    margin: 20px;
+}
+
+.piechart-btn:hover{
+    background-color: rgb(54, 158, 102);
+}

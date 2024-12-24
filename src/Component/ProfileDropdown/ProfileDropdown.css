@@ -1,0 +1,34 @@
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .Profiledropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 150px;
+  }
+  
+  .Profiledropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .Profiledropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+  }
+  
+  .Profiledropdown-menu li:hover {
+    background-color: #f0f0f0;
+  }
+  

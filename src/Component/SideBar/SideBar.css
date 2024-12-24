@@ -1,0 +1,112 @@
+.container{
+    display:flex;
+  }
+
+  .slidebar{
+    width: 100%;
+    padding: 20px;
+  }
+ 
+  .sidebar {
+    top: 0;
+    position: sticky;
+    background: #ffffff;
+    color: #6453a3;
+    height: 100vh;
+    width: 300px; /* Default width for large screens */
+    transition: all 0.5s;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .sidebar {
+      width: 150px; /* Reduce width for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      position: relative; /* No sticky positioning on smaller screens */
+      width: 100%; /* Full width for smaller screens */
+      height: auto; /* Adjust height dynamically */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sidebar {
+      width: 80%; /* Sidebar remains full-width */
+      padding: 10px; /* Add some padding for smaller screens */
+      font-size: 14px; /* Reduce font size for compact layout */
+    }
+  }
+  
+/* ........................................................................ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.top_section {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .top_section {
+    flex-direction: row; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+    gap: 10px; /* Add spacing between items */
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .top_section {
+    padding: 10px; /* Further reduce padding */
+    gap: 8px; /* Smaller gap for compact layout */
+  }
+}
+
+
+ 
+  .bars{
+    display: flex;
+    font-size: 25px;
+    margin-left: 50px;
+  }
+
+  .link{
+    display: flex;
+    color: #151313;
+    padding: 10px 15px;
+    gap: 15px;
+    transition: all 0.5s;
+  }
+  .link:hover{
+    background:#c1b2f8;
+    color: #5a5278;
+    transition: all 0.5s;
+  }
+  .active{
+    background: #a192d9;
+    color: #534c6d;
+  }
+  .icon, .link_text{
+    font-size: 15px;
+  }
+

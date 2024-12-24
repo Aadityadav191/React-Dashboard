@@ -1,0 +1,42 @@
+.Bell-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .Bell-icon:active{
+    background-color:#a192d9;
+    border-radius: 500%;
+  }
+ 
+  .Belldropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 300px;
+    font-size: small;
+    color: #58459d;
+  }
+  
+  .Belldropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .Belldropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+  }
+  
+
+  
+  .Belldropdown-menu li:hover {
+    background-color: #f0f0f0;
+  }
+  
