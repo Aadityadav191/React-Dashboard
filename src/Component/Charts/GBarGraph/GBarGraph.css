@@ -1,0 +1,40 @@
+
+.Groupedbarchart {
+    height: 30rem;
+    width: 90%; /* Flexible width for responsiveness */
+    max-width: 25rem; /* Restrict the maximum width */
+    padding: 1rem; /* Default padding */
+    border-radius: 20px; /* Rounded corners */
+    background-color: #f7f7f8; /* Background color */
+    margin: 0 auto; /* Center the chart */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for aesthetics */
+  }
+  
+  /* Media query for laptops (1440px width or close) */
+  @media (max-width: 1440px) {
+    .Groupedbarchart {
+      width: 85%; /* Adjust width for medium screens */
+      padding: 0.8rem; /* Slightly reduce padding */
+    }
+  }
+  
+  /* Media query for tablets (below 1024px width) */
+  @media (max-width: 1024px) {
+    .Groupedbarchart {
+      width: 95%; /* Use almost full width */
+      max-width: 25rem; /* Adjust max width */
+      padding: 0.6rem; /* Reduce padding further */
+    }
+  }
+  
+  /* Media query for mobile devices (below 768px width) */
+  @media (max-width: 768px) {
+    .Groupedbarchart {
+      width: 95%; /* Take full width */
+      max-width: none; /* Remove maximum width restriction */
+      padding: 0.5rem; /* Compact padding */
+      border-radius: 15px; /* Reduce corner radius for smaller screens */
+      box-shadow: none; /* Simplify design for mobile */
+    }
+  }
+  

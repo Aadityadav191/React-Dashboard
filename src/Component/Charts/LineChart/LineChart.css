@@ -1,0 +1,110 @@
+
+.linechartcontainer {
+  height: auto;
+  width: 90%; 
+  max-width: 20rem; 
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between; /* Push items to top and bottom */
+  flex-wrap: wrap; 
+  border-radius: 20px;
+  background-color: #f7f7f8;
+  margin: 0 auto; /* Center the container horizontally */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 1920px) and (min-width: 1280px) {
+  .linechartcontainer {
+    width: 80%; 
+    padding: 1rem; 
+    border-radius: 10px;
+    align-content: center;
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .linechartcontainer {
+    padding: 0.5rem;
+    border-radius: 10px; 
+  }
+}
+
+/* Media query for smaller laptops or screens below 1024px */
+@media (max-width: 1024px) {
+  .linechartcontainer {
+    height: auto;
+    width: 25rem;
+    padding: 1rem;
+    display: flex;
+    border-radius: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.linechart-btn {
+  background-color: rgb(234, 128, 183);
+  width: 100%; /* Allow flexibility */
+  max-width: 23rem; 
+  max-height: 40px; 
+  border-radius: 3px; 
+  color: aliceblue;
+  border: none; 
+  padding: 30px; 
+  margin: 20px auto; /* Center the button */
+  display: block; /* Ensure it takes up its own line */
+  text-align: center;
+}
+
+/* For 13.6-inch laptops (1440px width or larger) */
+@media screen and (max-width: 1920px) and (min-width: 1280px) {
+  .linechart-btn {
+    max-width: 20rem; /* Slightly smaller max width */
+    padding: 8px; /* Adjust padding */
+  }
+}
+
+/* For tablets and smaller laptops (below 1024px) */
+@media (max-width: 1024px) {
+  .linechart-btn {
+    max-width: 18rem; /* Reduce maximum width */
+    padding: 7px; /* Compact padding */
+  }
+}
+
+/* For mobile devices (below 768px) */
+@media (max-width: 768px) {
+  .linechart-btn {
+    max-width: 15rem; /* Further reduce width */
+    padding: 6px; /* Minimal padding */
+    font-size: 0.9rem; /* Adjust font size */
+  }
+}
+
+/* For very small devices (below 480px) */
+@media (max-width: 480px) {
+  .linechart-btn {
+    max-width: 12rem; /* Compact size for narrow screens */
+    padding: 5px; /* Smaller padding */
+    font-size: 0.8rem; /* Reduce font size */
+  }
+}
+.linechart-btn:hover {
+  background-color: rgb(54, 158, 102);
+}

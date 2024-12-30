@@ -1,0 +1,27 @@
+
+.footer {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.footer section {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stacks footer sections vertically */
+        align-items: center;
+    }
+
+    .footer section {
+        flex-direction: column; /* Align items vertically in each section */
+        align-items: center;
+        width: 100%; /* Ensures each section takes full width */
+    }
+}

@@ -1,0 +1,61 @@
+.piechartContainer {
+  height: auto;
+  width: 90%; /* Flexible width for responsiveness */
+  max-width: 18rem; /* Restrict maximum width */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between; /* Push items to top and bottom */
+  flex-direction: column; 
+  flex-wrap: wrap; 
+  border-radius: 20px;
+  background-color: #f7f7f8;
+  margin: 0 auto; /* Center the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Media query for 13.6-inch laptops (1440px width or close) */
+@media screen and (max-width: 1920px) and (min-width: 1280px) {
+  .piechartContainer {
+    width: 70%; 
+    max-width: 15rem; 
+    padding: 0.8rem;
+    border-radius: 15px; 
+  }
+}
+
+/* Media query for smaller laptops or screens below 1024px: Mobile and tablets  */
+@media (max-width: 1024px) {
+  .piechartContainer {
+    height: auto;
+    width: 90%;
+    max-width: 25rem;
+    padding: 0.6rem;
+    display: flex;
+    border-radius: 20px;
+    background-color: #f7f7f8;
+  }
+}
+
+.piechart-btn {
+  background-color: rgb(119, 103, 174);
+  /* width: 15rem; */
+  max-height: 40px;
+  border-radius: 3px;
+  color: aliceblue;
+  border: none;
+  padding: 10px;
+  margin: 20px;
+}
+
+/* Media query for 13.6-inch laptops (1440px width or close) */
+@media (max-width: 1440px) {
+  .piechart-btn {
+    align-items: center;
+    width: 50%; /* Slightly reduce width for laptops */
+    padding: 8px; /* Adjust padding for compactness */
+  }
+}
+
+.piechart-btn:hover {
+  background-color: rgb(54, 158, 102);
+}

@@ -1,0 +1,84 @@
+.barchartcontainer{
+  height:auto;
+  width: 25rem;
+  padding: .5rem;
+  display:flex;
+  border-radius: 20px;
+  background-color:#f7f7f8;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query for 13.6-inch laptops (1440px) */
+@media (max-width: 1440px) {
+  .barchartcontainer {
+    max-width: 20rem; 
+    padding: 0.8rem; 
+  }
+}
+/* Media query for tablets (below 1024px) */
+@media (max-width: 1024px) {
+  .barchartcontainer {
+    max-width: 20rem; 
+    padding: 0.6rem; 
+  }
+}
+
+
+
+.barchart-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    font-size: 0.5rem;
+    gap: 4rem; /* Adds spacing between buttons */
+  }
+  
+  /* Individual button styles */
+  .barchartbutton {
+    background-color: #ea80b7;
+    width: 20rem; /* Fixed width for larger screens */
+    max-height: 30px;
+    border-radius: 3px;
+    align-items: center;
+    color: aliceblue;
+    border: none;
+    text-align: center; 
+    cursor: pointer; /* Makes it clear the element is clickable */
+  }
+  
+  .barchartbutton:hover {
+    background-color: rgb(70, 167, 143);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .barchart-btn {
+      flex-direction: column; /* Stack buttons vertically */
+      align-items: center; /* Center buttons horizontally */
+      gap: 1.5rem; /* Add more spacing between stacked buttons */
+    }
+  
+    .barchartbutton {
+      width: 12rem; /* Reduce width for smaller screens */
+      max-height: 35px; /* Slightly increase height for better touch interaction */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .barchart-btn {
+      padding: 5px; /* Reduce padding for compact screens */
+      gap: 1rem; /* Adjust gap for better spacing */
+    }
+  
+    .barchartbutton {
+      width: 10rem; /* Smaller width for mobile devices */
+      max-height: 40px; /* Make buttons more touch-friendly */
+    }
+  }
+  
+
+
+

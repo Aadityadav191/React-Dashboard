@@ -1,0 +1,78 @@
+
+
+ .Header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center; /* Corrected from align-content to align-items */
+    justify-content: space-between;
+    padding: 0 10px; /* Adds padding for better spacing */
+  }
+  
+  /* search button */
+  .LeftHeader {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  /* icons and dropdown */
+  .rightHeader {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .rightHeader-icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .LeftHeader input {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    height: 25px;
+  }
+  
+  .dropdown-year {
+    padding: 8px;
+    height: 35px;
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .Header {
+      flex-direction: column; /* Stacks header elements vertically */
+      height: auto; /* Allows height to adjust dynamically */
+      gap: 8px; /* Adds space between elements */
+      padding: 10px; /* Ensures padding for smaller screens */
+    }
+  
+    .LeftHeader,
+    .rightHeader {
+      justify-content: center; /* Centers items for a balanced layout */
+      width: 100%; /* Makes sections take full width */
+    }
+  
+    .rightHeader-icons {
+      gap: 7px; /* Reduces gap between icons for smaller screens */
+      padding: 5px; /* Adjusts padding for compact layout */
+    }
+  
+    .LeftHeader input {
+      width: 90%; /* Makes input field responsive */
+      max-width: 250px; /* Optional: Sets a max width to avoid overly wide inputs */
+    }
+  
+    .dropdown-year {
+      width: 100%; /* Ensures dropdown spans the width */
+      max-width: 150px; /* Optional: Sets a max width for usability */
+    }
+  }
+  

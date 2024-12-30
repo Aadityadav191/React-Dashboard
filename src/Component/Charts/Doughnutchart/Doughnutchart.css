@@ -1,0 +1,46 @@
+
+.Doughnutchartcontainer {
+    height: auto;
+    width: 90%; 
+    max-width: 15rem; 
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    flex-wrap: wrap; 
+    border-radius: 20px;
+    background-color: #f7f7f8;
+    margin: 0 auto; /* Center the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  /* Media query for 13.6-inch laptops (1440px width or close) */
+  @media screen and (max-width: 1920px) and (min-width: 1280px) {
+    .Doughnutchartcontainer {
+      width: 80%;
+      padding: 0.8rem; 
+      border-radius: 15px; 
+    }
+  }
+  
+  /* Media query for tablets (below 1024px width) */
+  @media (max-width: 1024px) {
+    .Doughnutchartcontainer {
+        height: auto;
+        width: 200%;
+        max-width: 25rem;
+        padding: 0.6rem;
+        display: flex;
+        border-radius: 20px;
+        background-color: #f7f7f8;
+    }
+  }
+  
+  /* Media query for mobile devices (below 768px width) */
+  @media (max-width: 768px) {
+    .Doughnutchartcontainer {
+      width: 100%; 
+      padding: 0.5rem; 
+      box-shadow: none; 
+    }
+  }
+  

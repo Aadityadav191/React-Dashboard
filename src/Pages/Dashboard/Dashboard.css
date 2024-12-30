@@ -1,0 +1,202 @@
+.Dashboard-container {
+  padding: 10px;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .Dashboard-container {
+      padding: 10px; 
+      flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Dashboard-container {
+      padding: 5px; 
+  }
+}
+
+
+/* styling card containers  .................................................................................*/
+.Cards-Containers {
+  max-width: 100%;
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap; 
+}
+/* For large screens like 13.6-inch laptops (1440px width or larger) */
+@media screen and (max-width: 1920px) and (min-width: 1280px) {
+  .Cards-Containers {
+    gap: 2.5rem; /* Adds more space between cards */
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Cards-Containers {
+      padding: 8px; 
+      flex-direction: row;
+      justify-content: center; /* Center cards on medium screens */
+  }
+}
+
+
+
+/* ....................................................................................................... */
+.Dashboard-container h2 {
+  font-size: 25px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.Dashboard-container p {
+  font-size: 13px;
+  color: #6c757d;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .Dashboard-container h2 {
+      font-size: 22px; 
+      margin-bottom: 8px; 
+  }
+  .Dashboard-container p {
+      font-size: 12px; /* Adjust font size for readability on smaller screens */
+      margin-bottom: 8px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Dashboard-container h2 {
+      font-size: 20px; /* Smaller font for mobile devices */
+      margin-bottom: 6px;
+  }
+  .Dashboard-container p {
+      font-size: 11px; 
+      margin-bottom: 6px;
+  }
+}
+
+
+
+
+/* ........................................................................................................... */
+.dashboard-charts {
+  display: flex;
+  flex: 1 1 calc(33.33% - 16px); /* Cards take one-third width minus gap */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* For large screens like 13.6-inch laptops (1440px width or larger) */
+@media screen and (max-width: 1920px) and (min-width: 1280px) {
+  .dashboard-charts {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dashboard-charts {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 1.5rem; 
+    padding: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .dashboard-charts {
+    padding: 5px;
+    gap: 2rem; 
+  }
+}
+
+
+
+
+
+
+
+/* Grouped Barchart and Piechart row style..................................................................... */
+.Scharts-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; 
+  justify-content: space-between; 
+  gap: 1rem; 
+}
+
+/* For tablets and small laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .Scharts-container {
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 1.5rem; 
+  }
+}
+
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .Scharts-container {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 2rem;
+  }
+}
+
+/* For very small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .Scharts-container {
+    gap: 1rem; 
+    padding: 0 1rem; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling the middle of  dountchart and groupedchart div....................................................  */
+.Performance {
+  height: auto;
+  width: 15rem;
+  padding: 1rem;
+  font-size: medium;
+  border-radius: 20px;
+  background-color: #f7f7f8;
+  max-width: 100%; 
+}
+
+/* Mobile devices (portrait) */
+@media (max-width: 600px) {
+  .Performance {
+    width: 90%; 
+    font-size: 14px; 
+    padding: 0.8rem; 
+    border-radius: 15px; 
+    gap: 5rem;
+  }
+}
+
+/* Tablets or larger devices (portrait and landscape) */
+@media (max-width: 1024px) {
+  .Performance {
+    width: 80%; 
+    font-size: 16px; 
+    padding: 1rem; 
+  }
+}
