@@ -61,7 +61,7 @@
     }
   
     .rightHeader-icons {
-      gap: 7px; /* Reduces gap between icons for smaller screens */
+      gap: 1.5rem; /* Reduces gap between icons for smaller screens */
       padding: 5px; /* Adjusts padding for compact layout */
     }
   
