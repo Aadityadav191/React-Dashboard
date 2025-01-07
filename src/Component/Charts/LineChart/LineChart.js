@@ -82,7 +82,7 @@ export default function LineChart() {
           <Line
             data={data}
             options={options}
-            width={300} // Increase width for a larger chart
+            width={350} // Increase width for a larger chart
             height={300} // Set a specific height
           />
         </section>

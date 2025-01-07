@@ -11,3 +11,14 @@ body{
   padding:0;
   text-decoration: none;
 }
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+  background-color: #ebe6fe;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #ebe6fe, #7f6fb8);
+  border-radius: 50px;
+}
