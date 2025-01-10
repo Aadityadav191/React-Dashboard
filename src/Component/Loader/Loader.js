@@ -6,16 +6,14 @@ export default function Loader() {
     <>
 
 
-    <div className="dot-spinner">
-    <div className="dot-spinner__dot" />
-    <div className="dot-spinner__dot" />
-    <div className="dot-spinner__dot" />
-    <div className="dot-spinner__dot" />
-    <div className="dot-spinner__dot" />
-    <div className="dot-spinner__dot" />
-    <div className="dot-spinner__dot" />
-    <div className="dot-spinner__dot" />
+<>
+  <div className="loader">
+    <div className="load-inner load-one" />
+    <div className="load-inner load-two" />
+    <div className="load-inner load-three" />
+    <span className="text">Loading...</span>
   </div>
+</>
 
 
       
