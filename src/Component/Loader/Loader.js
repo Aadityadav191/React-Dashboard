@@ -4,19 +4,16 @@ import './Loader.css'
 export default function Loader() {
   return (
     <>
-
-
-<>
-  <div className="loader">
-    <div className="load-inner load-one" />
-    <div className="load-inner load-two" />
-    <div className="load-inner load-three" />
-    <span className="text">Loading...</span>
-  </div>
-</>
-
-
-      
-    </>
+    <div id="page">
+      <div id="container">
+        <div id="ring" />
+        <div id="ring" />
+        <div id="ring" />
+        <div id="ring" />
+        <div id="h3">loading..</div>
+      </div>
+    </div>
+  </>
+  
   )
 }
