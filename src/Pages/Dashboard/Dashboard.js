@@ -20,7 +20,6 @@ import { Navigate } from "react-router-dom";
 
 export default function Dashboard() {
   const isAuthenticated = true; // Replace with actual authentication check
-
   if (!isAuthenticated) {
     return <Navigate to="/" />;
   }

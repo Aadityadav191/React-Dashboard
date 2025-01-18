@@ -27,7 +27,7 @@
 /* For large screens like 13.6-inch laptops (1440px width or larger) */
 @media screen and (max-width: 1920px) and (min-width: 1280px) {
   .Cards-Containers {
-    gap: 2.5rem; /* Adds more space between cards */
+    gap: 1.5rem; /* Adds more space between cards */
     flex-direction: row;
     flex-wrap: wrap;
   }

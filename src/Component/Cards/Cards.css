@@ -1,72 +1,58 @@
-/* From Uiverse.io by Cobp */ 
-.loader {
+.card {
+  --bg: #f7f7f8;
+  max-width: 20ch;
+  max-height: 30px;
+  text-align: center;
+  background: var(--bg);
+  padding: 4em;
+  padding-block: 2.2em;
+  border-radius: 10px;
   position: relative;
+  overflow: hidden;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  width: 100px;
-  height: 100px;
-  margin: 130px 0;
-  perspective: 780px;
+  align-items: center;
+  gap: 0.3em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
+}
+.card {
+  flex: 0 0 calc(33.333% - 10px); /* Each card takes up 1/3 of the container width minus spacing */
+  margin-bottom: 10px; /* Space between rows */
 }
 
-.text {
-  font-size: 20px;
-  font-weight: 700;
-  color: #000000;
-  z-index: 10;
+.card:hover>div,.card:hover>strong {
+  transform: scale(1.3); /* Enlarge to 1.2 times its size */
+  transition: transform 0.5s ease; /* Smooth animation */
 }
 
-.load-inner {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  border-radius: 50%;
-}
 
-.load-inner.load-one {
-  left: 0%;
-  top: 0%;
-  border-bottom: 3px solid #5c5edc;
-  animation: rotate1 1.15s linear infinite;
-}
 
-.load-inner.load-two {
-  right: 0%;
-  top: 0%;
-  border-right: 3px solid #9147ff;
-  animation: rotate2 1.15s 0.1s linear infinite;
-}
-
-.load-inner.load-three {
-  right: 0%;
-  bottom: 0%;
-  border-top: 3px solid #3b82f6;
-  animation: rotate3 1.15s 0.15s linear infinite;
-}
-
-@keyframes rotate1 {
-  0% {
-    transform: rotateX(45deg) rotateY(-45deg) rotateZ(0deg);
-  }
-  100% {
-    transform: rotateX(45deg) rotateY(-45deg) rotateZ(360deg);
+/* Responsive styling for 13.6-inch laptop screens */
+@media screen and (max-width: 1440px) {
+  .card {
+    max-width: 18ch; /* Slightly reduce the width for better fit */
+    padding: 3em; /* Adjust padding to fit smaller screens */
+    padding-block: 1.8em;
+    gap: 0.2em; /* Reduce gap for smaller layout */
   }
 }
-@keyframes rotate2 {
-  0% {
-    transform: rotateX(45deg) rotateY(45deg) rotateZ(0deg);
-  }
-  100% {
-    transform: rotateX(45deg) rotateY(45deg) rotateZ(360deg);
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    max-width: 70%; /* Adjusts the width for smaller screens */
+    padding: 2em; /* Reduces padding for compact layout */
+    max-height: none; /* Allows dynamic height based on content */
+    max-width: 20ch;
   }
 }
-@keyframes rotate3 {
-  0% {
-    transform: rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
-  }
-  100% {
-    transform: rotateX(-60deg) rotateY(0deg) rotateZ(360deg);
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1.5em; /* Further reduces padding for very small screens */
+    gap: 0.2em; /* Tightens gap between elements */
+    max-width: 30ch;
   }
 }
