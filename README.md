@@ -1,3 +1,18 @@
+
+<h1>This project is Live at:  https://react-dashboard-adminpannel.netlify.app/</h1>
+
+<h3>Email: aadit@gmail.com</h3>
+<h3>Password: 12345 </h3>
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
