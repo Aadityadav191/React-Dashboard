@@ -75,7 +75,6 @@
 
 
 .dashboard-charts {
-  /* margin-top: 5px; */
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap; /* Allows wrapping for smaller screens */

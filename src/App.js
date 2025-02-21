@@ -20,7 +20,7 @@ function App() {
     <>
       <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Login />} />
+            <Route path="/" element={<SideBar><Dashboard /></SideBar>} />
             <Route path="/Login" element={<Login />} />
             <Route path="/Dashboard" element={ <SideBar><Dashboard /></SideBar>}/>
             <Route path="/Manager" element={ <SideBar><Manager /></SideBar>} />

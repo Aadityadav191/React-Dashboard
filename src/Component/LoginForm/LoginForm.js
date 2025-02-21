@@ -14,8 +14,8 @@ export default function LoginForm() {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    //Pramit: later Change this with Backend login
-    if (email === "Aadit@gmail.com" && password === "12345") {
+    //later Change this with Backend login
+    if (email === "aadit@gmail.com" && password === "12345") {
       setIsLoading(true); //loader 
       setTimeout(() => {
         navigate("/Dashboard"); // Navigate to the dashboard
